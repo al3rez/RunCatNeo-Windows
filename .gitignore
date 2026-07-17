@@ -1,0 +1,14 @@
+# Build output
+bin/
+obj/
+
+# Preview/verification artifacts written by --preview / --flyout / --dash-preview
+*.png
+!docs/**/*.png
+!src/Resources/**/*.png
+
+# IDE / OS
+.vs/
+*.user
+.DS_Store
+Thumbs.db

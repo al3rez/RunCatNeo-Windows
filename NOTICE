@@ -1,0 +1,24 @@
+RunCat Neo for Windows
+Copyright 2026 Alireza Bashiri
+
+This product is an unofficial Windows port and includes work derived from:
+
+  RunCat Neo — https://github.com/runcat-dev/RunCatNeo
+  Copyright 2026 Kyome22 (Takuto Nakamura)
+  Licensed under the Apache License, Version 2.0.
+
+Portions derived from the original project, as required by the Apache License 2.0:
+
+  - Runner animation frames (PNG artwork) under src/Resources/Runners/ are copied
+    unmodified from the original project.
+  - The runner frame-order patterns, the CPU→animation-speed formula, and the
+    Custom Metrics JSON schema are reimplemented from the original.
+
+Significant changes made in this port:
+
+  - Complete rewrite from Swift / SwiftUI (macOS) to C# / .NET WinForms (Windows).
+  - System-tray integration, animation loop, and CPU sampling reimplemented on
+    Windows APIs (GetSystemTimes, Shell_NotifyIcon, DWM system backdrop).
+  - Metrics dashboard reimplemented as a native Windows 11 tray flyout.
+  - The macOS-only dashboard settings window, metrics bar, runner gallery,
+    localization, and donation UI are not ported.
